@@ -24,9 +24,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '238962'))
-API_HASH = environ.get('API_HASH', 'da7e86cf57b0e6220b8a9e0aed228')
-OWNER_ID = environ.get('OWNER_ID', '6497757690')
+API_ID = int(environ.get('API_ID', '27662412'))
+API_HASH = environ.get('API_HASH', '4a695060ecd737dffa9e92c540b46ed2')
+OWNER_ID = environ.get('OWNER_ID', '6847319298')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # for eval function, work only in a specific group
@@ -47,17 +47,17 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/2f7d2f1c5fab
 SP = (environ.get('SP', 'https://graph.org/file/a0c2ab09ea6d665deb174.jpg https://graph.org/file/769aee62c9fbfd58fe7c0.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690 5115691197').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6847319298').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002308573369').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '-1002452396602').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1925104967 6497757690 5231212075').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6324457826').split()]
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001566837125')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001905367057')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002220096661')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002147724172')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
@@ -69,7 +69,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 PREFIX = environ.get("PREFIX", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anokha:<dbLifeline@cluster0.fvmpg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Lucy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -80,7 +80,7 @@ AI = is_enabled((environ.get("AI","True")), True)
 OPENAI_API = environ.get("OPENAI_API", " ")
 DEEP_API = environ.get("DEEP_API", "3ac9b077-654f-45c6-a1f0-a04a5ef6b69e")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q")
-AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
+AI_LOGS = int(environ.get("AI_LOGS", "-1002217420645")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
@@ -99,9 +99,9 @@ MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 RemoveBG_API = environ.get("RemoveBG_API", "BBfqJQTBznNFqg4R7VESNW46")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Lucy_Filter_bot")
-BOT_NAME = environ.get("BOT_NAME", "𝐋ᴜᴄʏ")
-BOT_ID = environ.get("BOT_ID", "6040310745")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Lucyhub_bot")
+BOT_NAME = environ.get("BOT_NAME", "Lucky")
+BOT_ID = environ.get("BOT_ID", "7553559184")
 S_GROUP = environ.get('S_GROUP', "weebs_support")
 S_CHANNEL = environ.get('S_CHANNEL', "codeflix_bots")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie7xchat')
