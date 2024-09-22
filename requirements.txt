@@ -92,7 +92,7 @@ moviepy==1.0.3
 pydub
 shazamio
 
-pyrogram>=2.0.106
+pyrofork
 Faker
 telethon
 sqlalchemy
