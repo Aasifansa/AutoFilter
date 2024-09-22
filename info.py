@@ -27,7 +27,7 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '27662412'))
 API_HASH = environ.get('API_HASH', '4a695060ecd737dffa9e92c540b46ed2')
 OWNER_ID = environ.get('OWNER_ID', '6847319298')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7553559184:AAFsGhjODNowETgdSuLe4DnEG9JnQcJrr08")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # for eval function, work only in a specific group
 EVAL_ID = environ.get("EVAL_ID", "-1001566837125")
@@ -88,7 +88,7 @@ TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫ
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'linkpays.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'e27949c396504dca50e6caed52b70917f00593c9')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'linkpays.in')
@@ -96,7 +96,7 @@ SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'e27949c396504dca50e6
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
-MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
+MAX_BTN = is_enabled((environ.get('MAX_BTN', "Flase")), True)
 PORT = environ.get("PORT", "8080")
 RemoveBG_API = environ.get("RemoveBG_API", "BBfqJQTBznNFqg4R7VESNW46")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Lucyhub_bot")
